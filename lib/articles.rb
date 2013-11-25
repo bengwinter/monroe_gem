@@ -17,8 +17,6 @@ module Monroe
       rescue
         raise MonroeError
       end
+    end
   end
-
 end
-
-binding.pry

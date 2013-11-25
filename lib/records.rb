@@ -11,7 +11,7 @@ module Monroe
         last_name = options[:last_name].nil? ? "" : options[:last_name]
         #limit = options[:limit].nil? ? "" : options[:limit]
         url = BASE_URI + "records?congress_id=" + congress_id + "&state=" + state + "&first_name=" + first_name + "&last_name" + last_name + "&api_key=" + api_key #Monroe.key
-        json_result = Crack::JSON.parse(open(url.to_s).read)
+        json_result = JSON.parse(open(url.to_s).read)
         return json_result
       rescue
         raise MonroeError
@@ -19,5 +19,3 @@ module Monroe
     end
   end
 end
-
-binding.pry

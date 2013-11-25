@@ -1,24 +1,25 @@
 require_relative 'monroe'
 module Monroe
 
-  module Articles
+  class Articles
     
-    def self.query(options = {})
-      begin
-        api_key = "dcff0223e4322abd32a6638ad67854ec"
-        congress_id = options[:congress_id].nil? ? "" : options[:congress_id]
-        state = options[:state].nil? ? "" : options[:state]
-        first_name = options[:first_name].nil? ? "" : options[:first_name]
-        last_name = options[:last_name].nil? ? "" : options[:last_name]
-        #limit = options[:limit].nil? ? "" : options[:limit]
-        url = BASE_URI + "articles?congress_id=" + congress_id + "&state=" + state + "&first_name=" + first_name + "&last_name" + last_name + "&api_key=" + api_key #Monroe.key
-        json_result = JSON.parse(open(url.to_s).read)
-        return json_result
-      rescue
-        raise MonroeError
-      end
+    def congressional_id(id)
+      url = BASE_URI + "articles?congress_id=" + id + "&api_key=" + Monroe.key
+      return JSON.parse(open(url.to_s).read)
     end
-  end
-end
 
-binding.pry
+    def state(state)
+      url = BASE_URI + "articles?state=" + state + "&api_key=" + Monroe.key
+      return JSON.parse(open(url.to_s).read)
+    end
+
+    def name(name)
+      first_name = name.split(' ')[0]
+      last_name = name.split(' ')[1]
+      url = BASE_URI + "articles?first_name=" + first_name + "&last_name" + last_name + "&api_key=" + api_key
+      return JSON.parse(open(url.to_s).read)
+    end
+    
+  end
+
+end

@@ -16,4 +16,10 @@ module Monroe
   class MonroeError < StandardError
   end
 
+  private
+
+  def get(url)
+    return JSON.parse(open(url.to_s).read)
+  end
+
 end

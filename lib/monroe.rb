@@ -1,11 +1,9 @@
-require_relative 'monroe/version'
-
-require 'pry'
 require 'net/http'
 require 'open-uri'
 require 'json'
 
 module Monroe
+  
   BASE_URI = 'http://political-sentiment.herokuapp.com/'
 
   class << self
@@ -17,4 +15,5 @@ module Monroe
 
   class MonroeError < StandardError
   end
+
 end

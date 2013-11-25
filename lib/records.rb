@@ -8,11 +8,6 @@ module Monroe
       return JSON.parse(open(url.to_s).read)
     end
 
-    def state(state)
-      url = BASE_URI + "records?state=" + state + "&api_key=" + Monroe.key
-      return JSON.parse(open(url.to_s).read)
-    end
-
     def name(name)
       first_name = name.split(' ')[0]
       last_name = name.split(' ')[1]
@@ -21,5 +16,5 @@ module Monroe
     end
 
   end
-  
+
 end

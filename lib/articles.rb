@@ -1,4 +1,5 @@
-require_relative 'monroe'
+require 'monroe'
+
 module Monroe
 
   class Articles
@@ -19,7 +20,7 @@ module Monroe
       url = BASE_URI + "articles?first_name=" + first_name + "&last_name" + last_name + "&api_key=" + Monroe.key
       return JSON.parse(open(url.to_s).read)
     end
-    
+
   end
 
 end

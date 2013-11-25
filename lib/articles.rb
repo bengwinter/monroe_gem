@@ -1,4 +1,4 @@
-require 'monroe'
+require './monroe'
 
 module Monroe
 

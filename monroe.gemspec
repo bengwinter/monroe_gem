@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Monroe::VERSION
   spec.authors       = ["Ben Winter"]
   spec.email         = ["ben.g.winter@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{API wrapper for the Monroe political sentiment API}
+  spec.summary       = %q{Provides access to Monroe's database of new articles, tweets, and bills with sentiment scores.}
+  spec.homepage      = "https://github.com/blakeruddock/political-sentiment"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

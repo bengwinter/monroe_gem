@@ -1,6 +1,6 @@
-# Monroe
+# Monroe: Political Content Aggregator
 
-TODO: Write a gem description
+A simple Ruby interface for the Monroe political sentiment API
 
 ## Installation
 
@@ -18,7 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+There are currently three endpoints accessible from this wrapper:
+1. Articles
+2. Tweets
+3. Political Records
+
+### Articles
+
+To return all articles for a politician using their Congressional ID number:
+
+	Monroe::Articles.congressional_id('B001277')
+
+To return all articles for a politician using their full name:
+
+	Monroe::Articles.name('Richard Blumenthal')
+
+To return articles for all listed politicians in a given state: 
+	
+	Monroe::Articles.state('CT')
+
 
 ## Contributing
 

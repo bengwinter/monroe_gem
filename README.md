@@ -22,7 +22,7 @@ There are currently three endpoints accessible from this wrapper:
 
 	Monroe::Articles
 	Monroe::Tweets
-	Monroe::Political Records
+	Monroe::Records
 
 To access the data from these endpoints, you will first need to request an API key and configure the client with this key. If you do not already have a key, you can generate one by querying the API's generator endpoint with your email as a parameter:
 
@@ -47,6 +47,30 @@ To return all articles for a politician using their full name:
 To return articles for all listed politicians in a given state: 
 	
 	Monroe::Articles.state('CT')
+
+### Tweets
+
+To return all tweets for a politician using their Congressional ID number:
+
+	Monroe::Tweets.congressional_id('B001277')
+
+To return all tweets for a politician using their full name:
+
+	Monroe::Tweets.name('Richard Blumenthal')
+
+To return tweets for all listed politicians in a given state: 
+	
+	Monroe::Tweets.state('CT')
+
+### Political Records
+
+To return all records for a politician using their Congressional ID number:
+
+	Monroe::Records.congressional_id('B001277')
+
+To return all records for a politician using their full name:
+
+	Monroe::Records.name('Richard Blumenthal')
 
 
 ## Contributing

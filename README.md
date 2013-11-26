@@ -19,9 +19,20 @@ Or install it yourself as:
 ## Usage
 
 There are currently three endpoints accessible from this wrapper:
-1. Articles
-2. Tweets
-3. Political Records
+
+	Monroe::Articles
+	Monroe::Tweets
+	Monroe::Political Records
+
+To access the data from these endpoints, you will first need to request an API key and configure the client with this key. If you do not already have a key, you can generate one by querying the API's generator endpoint with your email as a parameter:
+
+	political-sentiment.herokuapp.com/api_key?email=your_email@example.com
+
+Once you have your key, you can configure the client by setting the key in an initializer file of simply at the top of your program:
+
+	Monroe.key = YOUR_API_KEY
+
+Once the key is configured, you're good to go. Refer to the following documentation to access each endpoint.
 
 ### Articles
 

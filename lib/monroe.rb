@@ -1,4 +1,3 @@
-require 'net/http'
 require 'open-uri'
 require 'json'
 
@@ -19,9 +18,9 @@ module Monroe
   end
 
   private
-  
+
   def self.get(url)
-    return JSON.parse(open(url.to_s).read)
+    return JSON.parse(open(url.to_s).read).to_a[2][1]
   end
 
   class MonroeError < StandardError

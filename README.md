@@ -72,7 +72,7 @@ To return all records for a politician using their full name:
 	Monroe::Records.name('Richard Blumenthal')
 
 
-## Contributing
+### Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)

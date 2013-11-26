@@ -3,6 +3,7 @@ require 'json'
 
 require 'monroe/articles'
 require 'monroe/records'
+require 'monroe/bill'
 require 'monroe/tweets'
 require 'monroe/version'
 

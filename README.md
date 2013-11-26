@@ -1,6 +1,5 @@
-# Monroe: Political Content Aggregator
-
-A simple Ruby interface for the Monroe political sentiment API
+## Monroe: Political Content Aggregator
+#### A simple Ruby interface for the Monroe political sentiment API
 
 ### Installation
 

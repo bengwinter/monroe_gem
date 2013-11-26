@@ -81,7 +81,6 @@ To return all records for a politician using their full name:
 5. Create new Pull Request
 
 ####This gem is maintained by:
-
 [bengwinter](https://github.com/bengwinter)
 [blakeruddock](https://github.com/blakeruddock)
 [brycelambert](https://github.com/brycelambert)

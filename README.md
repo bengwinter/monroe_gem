@@ -2,7 +2,7 @@
 
 A simple Ruby interface for the Monroe political sentiment API
 
-## Installation
+### Installation
 
 Add this line to your application's Gemfile:
 
@@ -16,7 +16,7 @@ Or install it yourself as:
 
     $ gem install monroe
 
-## Usage
+### Access & Configuration
 
 There are currently three endpoints accessible from this wrapper:
 

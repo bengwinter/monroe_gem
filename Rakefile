@@ -5,4 +5,6 @@ Bundler::GemHelper.install_tasks
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 
-default: :spec
+# If you just run 'rake', it will run 'rake spec'
+task test: :spec
+task default: :spec

@@ -1,3 +1,4 @@
+require 'pry'
 module Monroe
 
   module Articles
@@ -15,7 +16,8 @@ module Monroe
     def self.name(name)
       first_name = name.split(' ')[0]
       last_name = name.split(' ')[1]
-      url = BASE_URI + "articles?first_name=" + first_name + "&last_name" + last_name + "&api_key=" + Monroe.key
+     
+      url = BASE_URI + "articles?first_name=" + first_name + "&last_name=" + last_name + "&api_key=" + ::Monroe.key
       return Monroe.get(url)
     end
 

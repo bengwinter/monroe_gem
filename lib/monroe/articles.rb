@@ -3,7 +3,7 @@ module Monroe
 
   module Articles
     
-    def self.congressional_id(id)
+    def self.congress_id(id)
       url = BASE_URI + "articles?congress_id=" + id + "&api_key=" + Monroe.key
       return Monroe.get(url)
     end

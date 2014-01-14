@@ -87,6 +87,6 @@ To return information regarding an individual bill given a bill number:
 5. Create new Pull Request
 
 ####This gem is maintained by:
-[bengwinter](https://github.com/bengwinter)
-[blakeruddock](https://github.com/blakeruddock)
-[brycelambert](https://github.com/brycelambert)
+[Ben Winter](https://github.com/bengwinter)
+[Blake Ruddock](https://github.com/blakeruddock)
+[Bryce Lambert](https://github.com/brycelambert)
